@@ -1,0 +1,76 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Input */
+input {
+    border: 1px solid rgb(200, 200, 200);
+    padding: .5em 1em;
+}
+
+input:focus {
+    outline: none !important;
+    box-shadow: 0 0 2px rgb(170, 214, 255) inset !important;
+}
+
+/* Section */
+.section {
+    width: 100vw;
+}
+
+/* NavBar */
+.navbar-toggler:focus,
+.navbar-toggler-icon:focus {
+    outline: 2px solid black !important;
+    /* box-shadow: 0 0 2px rgb(170, 214, 255); */
+    box-shadow: none;
+}
+
+/* Profile image */
+.profile-image {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-image-md {
+    width: 200px;
+    height: 200px;
+}
+
+.profile-image-sm {
+    width: 35px;
+    height: 35px;
+}
+
+/* Paginate */
+.paginate-nums {
+    display: flex;
+    width: 100%;
+    max-width: 350px;
+    justify-content: space-around;
+    padding: 0;
+    padding-bottom: 1rem;
+    margin: auto;
+}
+
+.paginate-nums .selected,
+.paginate-nums li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.paginate-nums li {
+    text-decoration: none;
+    list-style: none;  
+    gap: 100px;
+    border-radius: 50%;
+    width: 1.6em;
+    height: 1.6em;
+    text-align: center;
+}
+
+.paginate-nums .next a, 
+.paginate-nums .previous a {
+    font-weight: bold;
+    text-decoration: none;
+}

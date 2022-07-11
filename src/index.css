@@ -1,0 +1,260 @@
+/*remove bootstrap outline on focus*/
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+
+
+* {
+  box-sizing: border-box !important;
+}
+
+:root {
+  --blue: #174179;
+  --blue-rgb: 23, 65, 121;
+  --gray: rgb(34, 34, 34);
+  --light-gray: rgba(100,100,100,0.2);
+  --darkgray: #292e33;
+  --lightdarkgray: #425465;
+  --footerbk: gray;
+  --black: #1f1f1f;
+  --underline-duration: .4s;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Poppins', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+main {
+  min-height: 90vh;
+}
+
+.logo {
+  font-size: 30px;
+  line-height: 1;
+  font-family: "Indie Flower";
+  font-weight: bold;
+  color: var(--blue) !important;
+}
+
+.f-italic {
+  font-family: 'Indie Flower';
+}
+
+.no-link {
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  border: 0
+}
+
+.link {
+  background-image: linear-gradient(var(--blue), var(--blue));
+  background-size: 0% 3px;
+  transition: background-size var(--underline-duration);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding: 0 !important;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.link:hover {
+  background-size: 100% 3px;
+}
+
+.link__active {
+  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5));
+  background-size: 100% 3px;
+}
+
+section {
+  box-shadow: 0 1px 10px rgba(0,0,0,.1);
+  padding: 40px 0;
+}
+
+.rotating-text {
+  color: var(--blue) !important;
+}
+
+.react-rotating-text-cursor {
+  color: #161c2d;
+}
+
+/* index */
+.about-info:hover ~ .about-info-desc, .about-info-desc:hover  {
+  color: var(--blue) !important;
+}
+
+.relevant-info > div:nth-child(2) {
+    width: 60%;
+}
+
+.contact > div:nth-child(1) {
+    width: 30%;
+}
+.contact > div:nth-child(2) {
+    width: 70%;
+}
+
+.map iframe {
+    border-radius: 5px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+}
+
+.contact-links img {
+    width: 30px;
+    margin-bottom: .5rem;
+}
+
+.contact-links > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-brand {
+    width: 30%;
+    max-width: 200px;
+}
+
+.footer > div:nth-child(2) {
+    width: 70%;
+    max-width: 800px;
+}
+
+.footer .logo {
+	font-size: 2rem !important;
+}
+
+@media (max-width: 800px) {
+	.logo {
+		font-size: 1.4rem !important;
+	}
+
+	.relevant-info > div {
+		width: 100% !important;
+		max-width: 500px;
+	}
+
+    .relevant-info {
+        flex-direction: column;
+		align-items: center;
+    }
+
+	.contact {
+		flex-direction: column;
+		align-items: center;
+		gap: 40px;
+	}
+	
+	.contact-links {
+		width: 100% !important;
+	}
+
+	.map iframe, .map {
+		width: 100% !important;
+	}
+}
+
+@media (max-width: 500px) {
+	.footer {
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.footer-links {
+		display: flex !important;
+		flex-direction: column;
+	}
+}
+
+
+@media (max-width: 800px) {
+	.logo {
+		font-size: .8rem !important;
+	}
+}
+/* Online Education */
+.online-tools img {
+    width: 100px;
+}
+
+.bg-primary {
+	background-color: var(--blue) !important;
+}
+
+.color-primary {
+	color: var(--blue) !important;
+}
+
+/* News */
+.news-table {
+  width: 100%
+}
+
+.news-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.news-table th:nth-child(1) {
+  width: 140px !important;
+}
+
+.news-table thead tr {
+  border-top: 2px solid var(--blue);
+  text-align: left;
+}
+
+
+.news-table th, .news-table td {
+  padding: 12px 15px;
+}
+
+.news-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.news-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.news-table tbody tr:last-of-type {
+  border-bottom: 2px solid var(--blue);
+}
+
+/* tiny editor */
+.tox-tinymce {
+  border-radius: 0 !important;
+  border: 0 !important;
+}
